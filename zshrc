@@ -100,10 +100,11 @@ source $ZSH/oh-my-zsh.sh
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+alias l='ls -lBh'
+alias ll='ls -lABh'
+alias la='ls -Ah'
+alias cp='cp -i'                       # confirm before overwriting something
+alias df='df -h'                       # human-readable sizes
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.dotfiles/oh-my-zsh/custom/p10k.zsh ]] || source ~/.dotfiles/oh-my-zsh/custom/p10k.zsh

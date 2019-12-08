@@ -10,12 +10,13 @@ Includes `vim` and `zsh` (with `Oh My Zsh`)
 Clone the repo
 
 ```
-git clone git@github.com:VennieSo/dotfiles.git --recursive .dotfiles
+git clone git@github.com:VennieSo/dotfiles.git --recursive ~/.dotfiles
 ```
 
 If forgot the recursive during initial clone
 
 ```
+cd ~/.dotfiles/
 git submodule update --init --recursive
 ```
 
