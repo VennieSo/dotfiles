@@ -13,11 +13,16 @@ Clone the repo
 git clone git@github.com:VennieSo/dotfiles.git --recursive .dotfiles
 ```
 
+If forgot the recursive during initial clone
+
+```
+git submodule update --init --recursive
+```
+
 ### VIM
 
 ```
-touch .vimrc
-echo "source ~/.dotfiles/vimrc" >> .vimrc
+touch .vimrc && echo "source ~/.dotfiles/vimrc" >> .vimrc
 ```
 
 ### Zsh
@@ -25,16 +30,15 @@ echo "source ~/.dotfiles/vimrc" >> .vimrc
 Install `Zsh`
 
 ```
-sudo apt-get update
-sudo apt-get upgrade
-sudo apt-get install zsh
+sudo apt update
+sudo apt upgrade
+sudo apt install zsh
 ```
 
 Manual install of `Oh My Zsh`
 
 ```
-touch .zshrc
-echo "source ~/.dotfiles/zshrc" >> .zshrc
+touch .zshrc && echo "source ~/.dotfiles/zshrc" >> .zshrc
 exec zsh
 ```
 
