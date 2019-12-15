@@ -45,13 +45,14 @@ set expandtab           " convert <TAB> key-presses to spaces
 set shiftwidth=4        " number of spaces to use for each step of (auto)indent
 set softtabstop=4       " backspace after pressing <TAB> will remove up to this many spaces
 "set autoindent          " copy indent from current line when starting a new line
-set smartindent         " even better autoindent (e.g. add indent after '{')
+"set smartindent         " even better autoindent (e.g. add indent after '{')
 
 
 """" Search settings
 
 set incsearch           " search as characters are entered
 set hlsearch            " highlight matches
-set smartcase		    " try to be smart about cases 
+set ignorecase          " ignore case when searching 
+set smartcase		    " unless search term includes upper case
 
 
