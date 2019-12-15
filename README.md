@@ -51,11 +51,12 @@ chsh -s $(which zsh)
 ```
 
 
-## Update submodules
+## Updating 
 
-Oh-My-Zsh plugins and Vim packages are submodules in this repo. To update them, run 
+Oh-My-Zsh plugins and Vim packages are submodules in this repo. Remember to update them as well. 
 
 ```
+git pull
 git submodule update --remote --merge
 ```
 
