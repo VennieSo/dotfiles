@@ -10,3 +10,9 @@
 [submodule "oh-my-zsh-custom/plugins/zsh-syntax-highlighting"]
 	path = oh-my-zsh-custom/plugins/zsh-syntax-highlighting
 	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
+[submodule "vim/pack/default/start/lightline.vim"]
+	path = vim/pack/default/start/lightline.vim
+	url = https://github.com/itchyny/lightline.vim.git
+[submodule "vim/pack/default/start/dracula"]
+	path = vim/pack/default/start/dracula
+	url = https://github.com/dracula/vim.git

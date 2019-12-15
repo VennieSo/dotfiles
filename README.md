@@ -24,6 +24,7 @@ git submodule update --init --recursive
 
 ```
 touch .vimrc && echo "source ~/.dotfiles/vimrc" >> .vimrc
+ln -s .dotfiles/vim .vim
 ```
 
 ### Zsh
@@ -48,3 +49,14 @@ Make `zsh` the default shell
 ```
 chsh -s $(which zsh)
 ```
+
+
+## Update submodules
+
+Oh-My-Zsh plugins and Vim packages are submodules in this repo. To update them, run 
+
+```
+git submodule update --remote --merge
+```
+
+If any submodules were updated, commit the new version
