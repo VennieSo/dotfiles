@@ -75,7 +75,7 @@ ZSH_CUSTOM="$HOME/.dotfiles/oh-my-zsh-custom"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=( git colored-man-pages zsh-autosuggestions zsh-syntax-highlighting )
+plugins=( git colored-man-pages sudo zsh-autosuggestions zsh-syntax-highlighting )
 
 source $ZSH/oh-my-zsh.sh
 
@@ -96,15 +96,21 @@ source $ZSH/oh-my-zsh.sh
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
+# Use vi mode
+bindkey -v
+
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 alias l='ls -lBh'
 alias ll='ls -lABh'
-alias la='ls -Ah'
-alias cp='cp -i'                       # confirm before overwriting something
-alias df='df -h'                       # human-readable sizes
+alias la='ls -AhF'
+alias cp='cp -i'                # confirm before overwriting something
+alias mv='mv -i'
+alias mkdir='mkdir -pv'         # create parent directories if necessary
+alias df='df -Th'               # human-readable sizes and disk type
+alias free='free -mt'           # human-friendly output and total row
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.dotfiles/oh-my-zsh/custom/p10k.zsh ]] || source ~/.dotfiles/oh-my-zsh/custom/p10k.zsh
