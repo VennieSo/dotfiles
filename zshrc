@@ -75,7 +75,7 @@ ZSH_CUSTOM="$HOME/.dotfiles/oh-my-zsh-custom"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=( git colored-man-pages sudo zsh-autosuggestions zsh-syntax-highlighting )
+plugins=( colored-man-pages zsh-autosuggestions zsh-syntax-highlighting docker docker-compose )
 
 source $ZSH/oh-my-zsh.sh
 
@@ -112,11 +112,11 @@ alias mkdir='mkdir -pv'         # create parent directories if necessary
 alias df='df -Th'               # human-readable sizes and disk type
 alias free='free -mt'           # human-friendly output and total row
 
-alias dcup='docker-compose -f /opt/docker-compose.yml up -d' #brings up all containers if one is not defined after dcup
-alias dcdown='docker-compose -f /opt/docker-compose.yml down' #brings down all containers if one is not defined after dcdown
-alias dcpull='docker-compose -f /opt/docker-compose.yml pull' #pulls all new images if none specified after dcpull
-alias dclogs='docker-compose -f /opt/docker-compose.yml logs -tf --tail="50" '
-alias dtail='docker logs -tf --tail="50" "$@"' #docker log of specified container
+#alias dcup='docker-compose -f /opt/docker-compose.yml up -d' #brings up all containers if one is not defined after dcup
+#alias dcdown='docker-compose -f /opt/docker-compose.yml down' #brings down all containers if one is not defined after dcdown
+#alias dcpull='docker-compose -f /opt/docker-compose.yml pull' #pulls all new images if none specified after dcpull
+#alias dclogs='docker-compose -f /opt/docker-compose.yml logs -tf --tail="50" '
+#alias dtail='docker logs -tf --tail="50" "$@"' #docker log of specified container
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.dotfiles/oh-my-zsh/custom/p10k.zsh ]] || source ~/.dotfiles/oh-my-zsh/custom/p10k.zsh
