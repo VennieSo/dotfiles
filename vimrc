@@ -10,8 +10,10 @@ set visualbell          " stop the annoying bell
 """" Vim Appearance
 
 try
-    packadd! dracula
-    colorscheme dracula
+"    packadd! dracula
+"    colorscheme dracula
+    packadd! sonokai
+    colorscheme sonokai
 catch
 endtry
 
