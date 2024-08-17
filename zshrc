@@ -103,6 +103,7 @@ bindkey -v
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
+alias docker-compose='docker compose'
 alias l='ls -lBh'
 alias ll='ls -lABh'
 alias la='ls -AhF'

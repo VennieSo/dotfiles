@@ -12,8 +12,8 @@ set visualbell          " stop the annoying bell
 try
 "    packadd! dracula
 "    colorscheme dracula
-    packadd! sonokai
-    colorscheme sonokai
+"    packadd! sonokai
+"    colorscheme sonokai
 catch
 endtry
 
